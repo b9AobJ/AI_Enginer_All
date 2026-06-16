@@ -1,0 +1,42 @@
+"permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Bash",
+      "WebFetch(domain:translate.google.com)",
+      "WebSearch",
+      "Bash(grep -E \"\\\\-cn\\\\.md$\")",
+      "Bash(ls -la *.xlsx)",
+      "Bash(python3 extract_errors.py)",
+      "Bash(python3:*)",
+      "mcp__codegraph__codegraph_search",
+      "mcp__codegraph__codegraph_context",
+      "mcp__codegraph__codegraph_callers",
+      "mcp__codegraph__codegraph_callees",
+      "mcp__codegraph__codegraph_impact",
+      "mcp__codegraph__codegraph_node",
+      "mcp__codegraph__codegraph_status",
+      "mcp__codegraph__codegraph_files",
+      "WebFetch(domain:support.apple.com)"
+    ]
+  },
+  "model": "claude-opus-4-7",
+  "enableAllProjectMcpServers": true,
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "padding": 2
+  },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true
+  },
+  "extraKnownMarketplaces": {
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    }
+  },
+  "language": "chinese",
+  "theme": "light"
